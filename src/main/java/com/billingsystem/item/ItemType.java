@@ -13,5 +13,6 @@ public enum ItemType
         VIDEO,
         BOOK,
         FOOD,
-        MEDICAL
+        MEDICAL,
+        OTHER
     }

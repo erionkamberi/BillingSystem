@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-// Class for bill it contains a user reference and a list of items,
-// it provides method to calculate payable amount for bill
+// Class for bill, it e and a list of items,
+// it provides method to calculate payable/taxes amount for bill
 public class Bill {
 
 public static final int SALES_TAX_PERCENT = 10;
@@ -29,20 +29,6 @@ public Bill() {
 public Bill(List<Item> items) {
     this.items = items;
 }
-
-/**
- * Method to calculate payable amount for bill.
- * Cost of grocery items is calculated.
- * Cost for non-grocery items is calculated applying percentage discount as applicable to the user.
- * A discount of $5 per $100 is then applied on the bill amount.
- */
-//    public double getPayableAmount(){
-//        double payableAmount = 0.0;
-//        payableAmount = getItemsCost(findExemptTaxItems(items));
-//        payableAmount += getItemsCost(findImportedItems(items)) * (100 - user.getDiscount()) / 100;
-//        payableAmount = payableAmount * 0.95;
-//        return payableAmount;
-//    }
 
 //Method to find Sale Taxable Items in the bill
 private List<Item> findSaleTaxableItems(List<Item> items){

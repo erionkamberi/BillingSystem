@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-// Class for bill, it e and a list of items,
+// Class for bill, it contains a list of items,
 // it provides method to calculate payable/taxes amount for bill
 public class Bill {
 
